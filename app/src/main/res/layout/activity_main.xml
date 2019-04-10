@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Marvel.stackquestion.UI.activities.LoginActivity">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web"
+        android:visibility="gone"
+        >
+
+    </WebView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stack"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Login In"
+            android:textAllCaps="false"
+            android:elevation="10dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="23sp"
+            android:background="@drawable/login_rectangle"
+            android:layout_marginBottom="50dp"
+            android:textColor="#FFF"
+            android:padding="10dp"
+            android:id="@+id/login"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

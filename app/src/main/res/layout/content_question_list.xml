@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/TabAppTheme"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.Marvel.stackquestion.UI.activities.QuestionListActivity"
+    tools:showIn="@layout/app_bar_question_list">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        app:tabIndicatorGravity="bottom"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#FF9800"
+
+        app:tabTextColor="@color/colorUnSelect"
+        app:tabSelectedTextColor="@color/colorSelect"
+        style="@style/TabAppTheme"
+        app:tabBackground="@color/colorPrimary"
+        app:tabMode="fixed">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
